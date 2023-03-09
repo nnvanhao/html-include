@@ -17,27 +17,12 @@
   <div w3-include-html="./footer"></div>
 
   <script src="./script.js"></script>
+  <script src="./header/script.js"></script>
+  <script src="./footer/script.js"></script>
   <script>
     includeHTML(function () {
-      var footerBtn = document.getElementById("footerBtn");
-      if (footerBtn) {
-        footerBtn.addEventListener("click", function () {
-          alert("You clicked the footer button!");
-        });
-      } else {
-        console.log('footer not found');
-      }
 
-      var headerBtn = document.getElementById("headerBtn");
-      if (headerBtn) {
-        headerBtn.addEventListener("click", function () {
-          alert("You clicked the header button!");
-        });
-      } else {
-        console.log('header not found');
-      }
     });
-
   </script>
 </body>
 
