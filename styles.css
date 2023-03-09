@@ -1,0 +1,6 @@
+@import url('./header/styles.css');
+@import url('./footer/styles.css');
+
+.main {
+  background-color: green;
+}

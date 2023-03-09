@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Main</title>
+</head>
+
+<body>
+  <div w3-include-html="./header"></div>
+  <h1>Main</h1>
+  <button class="main" id="mainBtn">Click Main</button>
+  </div>
+  <div w3-include-html="./footer"></div>
+
+  <script src="./script.js"></script>
+  <script>
+    includeHTML(function () {
+      var footerBtn = document.getElementById("footerBtn");
+      if (footerBtn) {
+        footerBtn.addEventListener("click", function () {
+          alert("You clicked the footer button!");
+        });
+      } else {
+        console.log('footer not found');
+      }
+
+      var headerBtn = document.getElementById("headerBtn");
+      if (headerBtn) {
+        headerBtn.addEventListener("click", function () {
+          alert("You clicked the header button!");
+        });
+      } else {
+        console.log('header not found');
+      }
+    });
+
+  </script>
+</body>
+
+</html>
